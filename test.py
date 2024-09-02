@@ -28,5 +28,22 @@ class TestEvenNumber(unittest.TestCase):
         even_number.square()
         self.assertEqual(even_number.value, 4)
 
+
+# Added by Jungho Park 
+class jungho:
+    def addFive(self, x):
+        return x+5
+
+    def subtractFive(self, x):
+        return x-5
+
+
+class testAddFive(unittest.TestCase):
+    def addFive(self):
+        Jungho = jungho()
+        self.assertEqual(Jungho.addFive(2), 7)
+        self.assertEqual(Jungho.subtractFive(5), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
