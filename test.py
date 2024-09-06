@@ -37,25 +37,12 @@ class jungho:
     def subtractFive(self, x):
         return x-5
 
+
 class testAddFive(unittest.TestCase):
     def addFive(self):
         Jungho = jungho()
         self.assertEqual(Jungho.addFive(2), 7)
         self.assertEqual(Jungho.subtractFive(5), 0)
-
-# Added by Atomu Maruyama
-class atomu:
-    def multiplyByTwo(self, x):
-        return x*2
-    
-    def divideByTwo(self, x):
-        return x/2
-    
-class testMultiplyByTwo(unittest.TestCase):
-    def multiplyByTwo(self):
-        Atomu = atomu()
-        self.assertEqual(Atomu.multiplyByTwo(4), 8)
-        self.assertEqual(Atomu.divideByTwo(12), 6)
 
 
 if __name__ == "__main__":
